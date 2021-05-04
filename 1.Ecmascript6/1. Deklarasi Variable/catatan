@@ -1,0 +1,57 @@
+function makeTea(isCold) {
+    if(isCold) {
+        var tea = "Make an Ice Tea!"
+    } else {
+        var tea = "Make a Hot Tea!"
+    }
+    return tea;
+}
+
+ console.log(makeTea(false));
+
+ Seharusnya tidak dapat mengakses variabel tea karena ada di dalam
+if dan else ini terjadi karena proses hoisting 
+untuk menghindari ini maka dianjurkan menggunakan const atau let
+daripada var
+
+    function makeTea2(isCold) {
+        if(isCold) {
+            let tea = "Make an Ice Tea!"
+        } else {
+            let tea = "Make a Hot Tea!"
+        }
+        return tea;
+    }
+    
+    console.log(makeTea2(false));
+
+ Keuntungan menggunakan let/const daripada var
+ Dalam penggunaan let/const tidak diizinkan dideklerasikan ulang
+
+    let name = "John";
+    let name = "Doe";
+    
+    console.log(name);
+
+ Perbedaan antara let dan const ialah 
+ let mengizinkan untuk menginisialisasi  ulang nilai variabel
+ sedangkan const tidak. Tetapi masih memungkinkan untuk mengubah nilai dari array seperti
+
+ const fruits = ["apple", "orange"];
+fruits.push("banana");
+ 
+ 
+console.log(fruits);
+
+atau 
+
+const people = { name: "John", age: 18 }
+ 
+ 
+people.regency = "Bandung"
+ 
+ 
+console.log(people);
+ 
+
+  
