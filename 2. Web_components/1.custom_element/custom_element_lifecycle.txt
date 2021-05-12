@@ -1,0 +1,14 @@
+1. connectedCallback() : akan terpanggil setiap kali elemen berhasil ditambahkan ke dokumen html
+                         . Callback ini merupakan tempat yang tepat untuk menjalankan konfigurasi
+                          awal seperti mendapatkan data, atau mengatur attribute.
+
+2. disconnectedCallback() : akan terpanggil setiap kali elemen dikeluarkan dari DOM.
+                            Callback ini merupakan tempat yang tepat untuk membersihkan data
+                            yang masih disimpan pada element, bisa itu event, state, atau objek.
+
+3. attributeChangedCallback() : akan terpanggil setiap kali nilai atribut yang di observe melalui
+                                fungsi static get observedAttribute diubah. callback ini bisa 
+                                kita manfaatkan untuk memuat ulang data yang ditampilkan oleh elemen.
+
+4. adoptedCallback() : akan terpanggil setiap kali elemen dipindahkan pada dokumen baru.
+

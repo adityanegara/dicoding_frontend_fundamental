@@ -1,0 +1,3 @@
+jika attachShadow({mode : "open"});
+maka variabel dapat diakses
+jika closed maka tidak dapat diakses
