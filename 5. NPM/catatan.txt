@@ -1,0 +1,19 @@
+1. Perintah install
+    : npm install nama_paket
+
+2. Melihat dokumentasi dari Perintah
+   : npm install -h
+
+3. Perintah penting
+    3.1 npm init 
+    : Membuat berkas package.json pada proyek
+
+    3.2 npm uninstall nama_paket
+    : menghapus dan mengeluarkan paket dari berkas package.json
+
+    3.3 npm run-script command
+    : menjalankan perintah yang terdapat pada objek scripts yang terdapat 
+      di berkas package.json
+
+    3.4 npm version
+    : untuk melihat versi package yang tersedia secara global atau lokal
