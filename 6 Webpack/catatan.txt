@@ -1,0 +1,91 @@
+A) Pengertian Webpack 
+    : module bundler untuk aplikasi javascript modern. Ketika webpack dijalankan pada
+      proyek kita, di belakang layar webpack akan mengobservasi modul apa saja yang kita 
+      gunakan dan membungkus modul tersebut menjadi satu berkas
+
+B) 5 Konsep Webpack
+    B.1 Entry 
+    : Titik awal dimana webpack akan menganalisa berkas dan membentuk dependency graph
+
+    B.2 Output
+    : Berkas bundel yang dihasilkan dari berkas berkas yang dianalisis webpack berdasarkan 
+      entry point
+
+    B.3 Loaders
+    : Transformation tools pada webpack, yang akan memproses setiap berkas
+      selain Javascript atau JSON yang kita import menjadi format yang dapat digunakan ke
+      tahap produksi
+
+    B.4 Plugin
+    : Digunakan untuk melakukan tugas seperti optimasi bundel, management aset dan sebagainya
+
+    B.5 Mode 
+    : Kondisi yang digunakan webpack sebagai acuan optimasi apa saja yang harus diterapkan
+      dalam melakukan tugasnya. Dalam mode kkita dapat menetapkan nilai production, development,
+      atau none
+    
+C) Install webpack 
+  : npm install webpack --save-dev
+
+D) webpack-cli
+  : package yang digunakan untuk membantu kita menjalankan webpack melalui sebuah perintah
+
+E) build package.JSON
+  : menjalankan script build dan membuat script yang berjalan pada aplikasi
+
+F) Menggunakan Loader
+  F.1 css-Loader
+     : loader yang memproses berkas dengan format .css
+  F.2 style-loader 
+     : loader yang digunakan untuk membuat styling dapat diterapkan secara modular
+       dengan menggunakan import statement
+  F.3 Babel
+     : mengonversi javascript ES6 menjadi ES5 agar dapat dijalankan pada semua browser
+  
+  F.4 @babel/core
+     : Package inti yang harus dipasang ketika kita hendak menggunakan babel.
+
+  F.5 babel-loader 
+     : package yang diperlukan untuk menggunakan babel sebagai loader pada webpack
+
+  F.6 @babel/preset-env 
+     : package preset yang akan kita gunakan untuk membantu babel-loader dalam
+      melakukan tugasnya. @babel/preset-env merupakan preset cerdas yang
+      memungkinkan kita menggunakan sintaks JavaScript terbaru tanpa
+      menetapkan secara spesifik sintaks JavaScript versi apa yang kita gunakan.
+      
+  F.4 Instalasi Babel
+     : npm install @babel/core --save-dev
+       npm install babel-loader --save-dev
+       npm install @babel/preset-env --save-dev
+
+G) Plugin
+   G1) HtmlWebpackPlugin
+    : webpack dapat membuatkan berkas html dan memasukkan script hasil bundel
+      pada berkas HTML yang dibuat secara otomatis
+
+   G2) Instalasi 
+   : npm install html-webpack-plugin --save-dev
+
+H) Webpack Dev Server 
+   : Setiap perubahan harus kita rebuild. webpack dev server ialah fiture live-reloading
+
+  H1) Instalasi
+  : npm install webpack-dev-server --save-dev
+
+I) Mengonfigurasi webpack berdasarkan environment
+   I.1) Webpack Development Konfigurasi
+   : menerapkan konfigurasi 
+     yang selalu optimal untuk mempercepat proses perubahan pada browser (hot reloading)
+
+  I.2) Webpack konfigurasi production
+  : ingin fokus terhadap optimasi bundling dan kompatibilitasnya pada browser.
+
+  I.3) Webpack merge
+   : agar tidak membuat 2 file webpack.config.js
+
+  I.4) Install webpack-merge
+   : npm install webpack-merge --save-dev
+
+
+
