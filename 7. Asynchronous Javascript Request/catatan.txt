@@ -54,3 +54,5 @@ F) XHR(XMLHttpRequest)
   : objek yang tersedia pada browser yang digunakan untuuk membuat HTTP Request menggunakan
     JavaScript. 
     
+G) Fetch
+ : 
