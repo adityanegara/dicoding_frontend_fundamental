@@ -1,0 +1,56 @@
+A) HTTP
+  A1) Pengertian HTTP
+      : Hypertext Transfer Protocol ialah format komunikasi antar server dan client
+
+  A2) HTTP Request
+      : Setiap kali client meminta sesuatu dari server
+
+  A3) HTTP Response
+      : Ketika server menanggapi permintaan dari client
+
+B) Web APIs
+   B1) Pengertian Web APIs  
+      : Interface yang disediakan oleh penyedia data agar data yang ia miliki 
+        dapat dimanfaatkan dengan mudah pada banyak aplikasi.
+   
+   B2) Keuntungan
+      : Proses pengembangan aplikasi menjadi lebih efisien. Karena cukup
+        membangun satu WEB API, data dapat dikonsumsi pada berbagai macam 
+        platform.
+
+   B3) REST(Reresentational State Transfer)
+      : Pola Standar Web API yang mengembalikan format text,JSON,atau XML
+
+   B4) Method REST
+      : 1) GET    : Digunakan untuk mengambil informasi dari Web API.
+        2) POST   : Digunakan untuk menambahkan Data.
+        3) PUT    : Digunakan untuk mengubah data.
+        4) DELETE : Digunakan untuk menghapus data.
+    
+   B5) Http Response
+     : 1) 200 (Ok)           : Request berhasil dipenuhi oleh server
+       2) 400 (Bad Request)  : Server tidak mengerti request yang dikirimkan client.
+       3) 401 (Unauthorized) : Request membutuhkan authorization.
+       4) 403 (Forbidden)    : Server mengerti request dari client namun menolak
+                               untuk memprosesnya karena request tersebut
+                               tidak boleh dilakukan.
+       5) 404 (Not Found)    : Resource yang diminta tidak ditemukan.
+       6) 500 (Server Error) : Server mengalami kendala untuk memproses request
+
+C) Same Origin Policy
+   : Hanya memperbolehkan melakukan request dari domain yang sama.
+     Contoh jika ingin mengakses API yang bersumber dari google.com/API
+     maka kita sebagai client perlu menjadi google.com. Jika kita berasal dari
+     domain yang berbeda, contohnya, bing.com maka kita tidak dapat menggunakan AJAX
+     pada google.com/api.
+
+D) CORS (Cross Origin Resource Sharing)
+   : Mengizinkan WEB Api dikonsumsi untuk umum. 
+
+E) JSON(Javascript Object Notation)
+   : Format untuk menukaran data. Struktur JSON dapat terbentuk dari objek dan array.
+
+F) XHR(XMLHttpRequest)
+  : objek yang tersedia pada browser yang digunakan untuuk membuat HTTP Request menggunakan
+    JavaScript. 
+    
